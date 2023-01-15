@@ -8,7 +8,7 @@ namespace _8._6_HomeWork
 {
     class Program
     {
-        static void fillList (List<int> list)
+        static private void fillList (List<int> list)
         {
             Random rand = new Random();
 
@@ -18,7 +18,7 @@ namespace _8._6_HomeWork
             }
         }
 
-        static void printList (List<int> list)
+        static private void printList (List<int> list)
         {
             int j = 1;
             for (int i = 0; i < list.Count; i++)
@@ -32,7 +32,7 @@ namespace _8._6_HomeWork
             }
         }
 
-        static void clearList(int downNumber, int upNumber, List<int> list)
+        static private void clearList(int downNumber, int upNumber, List<int> list)
         {
             for (int i = 0; i < list.Count; i++)
             {
