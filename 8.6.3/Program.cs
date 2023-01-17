@@ -18,7 +18,7 @@ namespace _8._6._3
                 Console.Write("Введите число, которое хотите добавить в коллекцию уникальных чисел: ");
                 int numberToAdd = int.Parse(Console.ReadLine());
 
-                if (mySet.Contains(numberToAdd))
+                if (!mySet.Add(numberToAdd))
                 {
                     Console.Write($"Число {numberToAdd} уже есть в коллекции уникальных чисел\n");
                 }
